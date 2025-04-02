@@ -1,0 +1,138 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Hero Section */
+.hero-acerca {
+    background: url('../images/oficinas-alas.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-acerca .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Misión y Visión */
+.mision-vision {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.mv-container {
+    display: flex;
+    gap: 20px;
+}
+
+.mv-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.mv-icon i {
+    font-size: 40px;
+    color: #007bff;
+}
+
+/* Nuestra Historia */
+.historia {
+    background-color: #fff;
+    padding: 40px;
+}
+
+.historia-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.historia-text {
+    width: 50%;
+}
+
+.historia-img img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* Valores */
+.valores {
+    padding: 40px;
+    text-align: center;
+}
+
+.valores-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.valor-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.valor-icon i {
+    font-size: 30px;
+    color: #28a745;
+}
+
+/* Equipo */
+.equipo-container {
+    text-align: center;
+    padding: 40px;
+}
+
+.equipo-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.miembro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.miembro h3 {
+    margin: 10px 0;
+}
+
+/* CTA */
+.cta-section {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.btn-contacto {
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}

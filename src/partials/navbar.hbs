@@ -1,0 +1,19 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <a href="/">
+      <img src="/images/Logo empresa.jpeg" alt="Correduría de Seguros ALAS" class="logo">
+    </a>
+    <button class="menu-toggle" aria-label="Menú">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <ul class="navbar-menu {{#if active.testimonios}}testimonios-active{{/if}}">
+    <li class="{{#if active.testimonios}}active{{/if}}">
+      <a href="/testimonios.html" class="nav-link">Testimonios</a>
+    </li>
+    <li class="{{#if active.acerca}}active{{/if}}">
+      <a href="/acerca.html" class="nav-link">Acerca de</a>
+    </li>
+  </ul>
+</nav>

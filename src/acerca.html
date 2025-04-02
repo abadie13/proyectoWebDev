@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Nosotros - Correduría de Seguros ALAS</title>
+    <link rel="stylesheet" href="/css/acerca.css">
+    <link rel="stylesheet/less" type="text/css" href="less/acerca.less">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="logo-link">
+                <img src="/images/Logo empresa.jpeg" alt="Correduría de Seguros ALAS" class="logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/servicios">Servicios</a></li>
+                    <li><a href="/acerca" class="active">Acerca</a></li>
+                    <li><a href="/testimonios">Testimonios</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    {{> acerca }}
+    
+    {{> footer }}
+
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+    <script src="/js/main.js" type="module"></script>
+    <script src="/modules/acerca.js" type="module"></script>
+</body>
+</html>
