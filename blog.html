@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Alas Seguros</title>
+    <link rel="stylesheet" href="less/main.less" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
+    {{>headers}}
+    <main>
+      <section class="hero-blog">
+        <div class="hero-content">
+          <h1>Blog de Protección y Seguridad</h1>
+          <p>Consejos expertos, tendencias y novedades en el mundo de los seguros</p>
+        </div>
+      </section>
+
+      <div class="blog-container">
+        
+        <div class="blog-categories">
+          <h3>Categorías</h3>
+          <ul class="category-list">
+            <li><a href="#" class="active">Todos los artículos</a></li>
+            <li><a href="#">Seguros Personales</a></li>
+            <li><a href="#">Hogar y Familia</a></li>
+            <li><a href="#">Vehículos</a></li>
+            <li><a href="#">Empresas</a></li>
+            <li><a href="#">Finanzas y Ahorro</a></li>
+          </ul>
+        </div>
+
+        
+        <section class="most-read">
+          <h2>Lo más leído</h2>
+          <div class="blog-grid">
+            <article class="blog-card">
+              <div class="card-image">
+                <img src="imagenes/cambio-climatico.jpg" alt="Cambio climático" onerror="this.src='imagenes/placeholder.jpg'">
+              </div>
+              <div class="card-content">
+                <div class="card-date">25 MAR 25</div>
+                <h3><a href="#">¿Cómo impactaría el cambio climático en un mundo sin seguro?</a></h3>
+                <p>Inundaciones, tormentas, sequías... Los fenómenos de la naturaleza son cada vez más graves y frecuentes. ¿Cómo sería el mundo sin esta protección?</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </article>
+
+            <article class="blog-card">
+              <div class="card-image">
+                <img src="imagenes/educacion-financiera.jpg" alt="Educación financiera" onerror="this.src='imagenes/placeholder.jpg'">
+              </div>
+              <div class="card-content">
+                <div class="card-date">24 MAR 25</div>
+                <h3><a href="#">Arranca la VII edición de "El Riesgo y Yo"</a></h3>
+                <p>Comienza la VII edición de "El Riesgo y yo", el programa de educación financiera desarrollado por UNESPA en colaboración con la Fundación Junior Achievement.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </article>
+
+            <article class="blog-card">
+              <div class="card-image">
+                <img src="imagenes/seguro-agricola.jpg" alt="Seguro agrario" onerror="this.src='imagenes/placeholder.jpg'">
+              </div>
+              <div class="card-content">
+                <div class="card-date">21 MAR 25</div>
+                <h3><a href="#">Agricultor, protege tus cultivos contra la sequía y evita que se sequen tus rentas</a></h3>
+                <p>Para luchar contra la sequía, hay asegurar las explotaciones agropecuarias, para que, así, cuando los cultivos no se dan, no se sequen también las rentas de los agricultores.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        
+        <section class="recent-posts">
+          <h2>Artículos recientes</h2>
+          <div class="blog-grid">
+            <article class="blog-card">
+              <div class="card-image">
+                <img src="imagenes/seguro-vida.jpg" alt="Seguro de vida" onerror="this.src='imagenes/placeholder.jpg'">
+              </div>
+              <div class="card-content">
+                <div class="card-date">2 ABR 25</div>
+                <h3><a href="#">5 Consejos para Elegir el Seguro de Vida Adecuado</a></h3>
+                <p>Elegir un seguro de vida puede ser una tarea desafiante debido a la variedad de opciones disponibles. Te compartimos los puntos clave a considerar.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </article>
+
+            <article class="blog-card">
+              <div class="card-image">
+                <img src="imagenes/seguro-familiar.jpg" alt="Protección contra inundaciones" onerror="this.src='imagenes/placeholder.jpg'">
+              </div>
+              <div class="card-content">
+                <div class="card-date">15 MAR 25</div>
+                <h3><a href="#">¿Cómo Proteger tu Hogar de Inundaciones?</a></h3>
+                <p>Con el aumento de fenómenos meteorológicos extremos, proteger tu hogar contra inundaciones se ha vuelto esencial. Aprende qué medidas tomar.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </article>
+
+            <article class="blog-card">
+              <div class="card-image">
+                <img src="imagenes/seguro-responsabilidad.jpg" alt="Seguro para emprendedores" onerror="this.src='imagenes/placeholder.jpg'">
+              </div>
+              <div class="card-content">
+                <div class="card-date">28 FEB 25</div>
+                <h3><a href="#">La Importancia del Seguro para Emprendedores</a></h3>
+                <p>Emprender conlleva riesgos que muchas veces pasamos por alto. Un plan de seguros adecuado puede significar la diferencia para tu empresa.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    {{>footer}}
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        
+        const categoryLinks = document.querySelectorAll('.category-list a');
+        
+        categoryLinks.forEach(link => {
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            
+            categoryLinks.forEach(l => l.classList.remove('active'));
+            
+            this.classList.add('active');
+            
+            
+            const category = this.textContent;
+            alert('Filtrando por: ' + category);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

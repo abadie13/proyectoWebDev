@@ -1,0 +1,57 @@
+.pq_{
+    margin-bottom: 15%;
+    margin-top: 15%;
+    h1{
+        text-align: center;
+        color: @primary-color;
+    }
+    .carta_pq{
+        
+
+        .cartas{
+            margin-top: 5%;
+            width: 90%;
+            img{
+                height: 40px;
+                transition: 0.5s;
+            }
+            img:hover{
+                transform: scale(1.25);
+            }
+            h2{
+                margin-top: 10px;
+            }
+            p{
+                margin-top: 15px;
+                color: rgba(0, 0, 0, 0.625);
+            }
+        }
+    }
+}
+@media(min-width: @breakpoint){
+    .pq_{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        .carta_pq{
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%; /* Ajusta según necesites */
+            margin: 0 auto;
+            .cartas{
+                width: 48%; /* Aproximadamente la mitad del contenedor, con espacio entre ellas */
+                margin-bottom: 30px; /* Espacio entre filas */
+                padding: 20px;
+                box-sizing: border-box;
+                img,h2,p{
+                    padding-left: 10px;
+                }
+                img{
+                    padding-top: 5px;
+                }
+            }
+            
+        }
+    }
+}

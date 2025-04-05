@@ -1,0 +1,110 @@
+
+
+footer {
+    
+    background: @footer-bg;
+    color: @text-color;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+
+
+    .footer-logo img {
+        width: 150px;
+    }
+
+    img:hover{
+        cursor: pointer;
+    }
+
+    .footer-links, .footer-contact {
+        h3 {
+            border-bottom: 2px solid @primary-color;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                margin: 5px 0;
+            }
+
+            a {
+                color: @text-color;
+                text-decoration: none;
+                transition: color @hover-duration ease-in-out;
+
+                &:hover {
+                    color: @primary-color;
+                }
+            }
+        }
+
+        p {
+            margin: 5px 0;
+        }
+    }
+
+    
+
+    .social-icons {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 10px;
+
+        a {
+            color: @text-color;
+            font-size: 18px;
+            transition: color @hover-duration ease-in-out;
+
+            &:hover {
+                color: @primary-color;
+            }
+        }
+    }
+}
+
+// A partir de 768px, cambiar a diseño de 3 columnas
+@media (min-width: @breakpoint) {
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        nav ul {
+            flex-direction: row;
+            gap: 20px;
+        }
+        .footer-contact{
+            margin-right: 20px;
+            p{
+                margin-top: 15px;
+            }
+        }
+        .footer-logo{
+            margin-left: 20px;
+            p{
+                margin-top: 15px;
+            }
+        }
+        .footer-links{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            ul{
+                margin-top: 5px;
+                li, a{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+   
+}

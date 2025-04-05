@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios | Alas Seguros</title>
+    <link rel="stylesheet" href="less/main.less" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
+    {{>headers}}
+    <main>
+      <div class="servicios-container">
+        <section class="categorias-servicios">
+          <button class="categoria-btn activo" data-categoria="todos">Todos</button>
+          <button class="categoria-btn" data-categoria="personales">Personales</button>
+          <button class="categoria-btn" data-categoria="patrimoniales">Patrimoniales</button>
+          <button class="categoria-btn" data-categoria="empresariales">Empresariales</button>
+        </section>
+
+        <section class="grid-servicios">
+          
+          <div class="servicio-card" data-tipo="patrimoniales">
+            <img src="imagenes/seguro-auto.jpg" alt="Seguro de Auto" class="servicio-img">
+            <div class="servicio-overlay">
+              <h3>Seguro de Auto</h3>
+              <a href="#" class="btn-servicio"><i class="fas fa-chevron-down"></i></a>
+            </div>
+            <div class="servicio-hover-overlay">
+              <div class="hover-content">
+                <p>Protegemos tu vehículo ante cualquier imprevisto.</p>
+                <a href="#" class="btn-mas-info">MÁS INFORMACIÓN</a>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="servicio-card" data-tipo="personales">
+            <img src="imagenes/seguro-vida.jpg" alt="Seguro de Vida" class="servicio-img">
+            <div class="servicio-overlay">
+              <h3>Seguro de Vida</h3>
+              <a href="#" class="btn-servicio"><i class="fas fa-chevron-down"></i></a>
+            </div>
+            <div class="servicio-hover-overlay">
+              <div class="hover-content">
+                <p>Asegura el futuro financiero de tus seres queridos.</p>
+                <a href="#" class="btn-mas-info">MÁS INFORMACIÓN</a>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="servicio-card" data-tipo="personales">
+            <img src="imagenes/seguro-medico.jpg" alt="Seguro Médico" class="servicio-img">
+            <div class="servicio-overlay">
+              <h3>Seguro Médico</h3>
+              <a href="#" class="btn-servicio"><i class="fas fa-chevron-down"></i></a>
+            </div>
+            <div class="servicio-hover-overlay">
+              <div class="hover-content">
+                <p>Te protegemos a ti y a los tuyos con la mejor atención sanitaria.</p>
+                <a href="#" class="btn-mas-info">MÁS INFORMACIÓN</a>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="servicio-card" data-tipo="patrimoniales">
+            <img src="imagenes/seguro-hogar.jpg" alt="Seguro de Hogar" class="servicio-img">
+            <div class="servicio-overlay">
+              <h3>Seguro de Hogar</h3>
+              <a href="#" class="btn-servicio"><i class="fas fa-chevron-down"></i></a>
+            </div>
+            <div class="servicio-hover-overlay">
+              <div class="hover-content">
+                <p>Protegemos tu hogar y todo lo que hay en él.</p>
+                <a href="#" class="btn-mas-info">MÁS INFORMACIÓN</a>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="servicio-card" data-tipo="personales">
+            <img src="imagenes/seguro-familiar.jpg" alt="Seguro Familiar" class="servicio-img">
+            <div class="servicio-overlay">
+              <h3>Seguro Familiar</h3>
+              <a href="#" class="btn-servicio"><i class="fas fa-chevron-down"></i></a>
+            </div>
+            <div class="servicio-hover-overlay">
+              <div class="hover-content">
+                <p>Protección integral para toda tu familia en un solo plan.</p>
+                <a href="#" class="btn-mas-info">MÁS INFORMACIÓN</a>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="servicio-card" data-tipo="empresariales">
+            <img src="imagenes/seguro-negocio.jpg" alt="Seguro para Negocios" class="servicio-img">
+            <div class="servicio-overlay">
+              <h3>Seguro para Negocios</h3>
+              <a href="#" class="btn-servicio"><i class="fas fa-chevron-down"></i></a>
+            </div>
+            <div class="servicio-hover-overlay">
+              <div class="hover-content">
+                <p>Protege tu inversión y garantiza la continuidad de tu empresa.</p>
+                <a href="#" class="btn-mas-info">MÁS INFORMACIÓN</a>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="servicio-card" data-tipo="empresariales">
+            <img src="imagenes/seguro-responsabilidad.jpg" alt="Seguro de Responsabilidad Civil" class="servicio-img">
+            <div class="servicio-overlay">
+              <h3>Responsabilidad Civil</h3>
+              <a href="#" class="btn-servicio"><i class="fas fa-chevron-down"></i></a>
+            </div>
+            <div class="servicio-hover-overlay">
+              <div class="hover-content">
+                <p>Cobertura ante reclamaciones de terceros en tu actividad profesional.</p>
+                <a href="#" class="btn-mas-info">MÁS INFORMACIÓN</a>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="servicio-card" data-tipo="personales">
+            <img src="imagenes/seguro-accidentes.jpg" alt="Seguro de Accidentes" class="servicio-img">
+            <div class="servicio-overlay">
+              <h3>Seguro de Accidentes</h3>
+              <a href="#" class="btn-servicio"><i class="fas fa-chevron-down"></i></a>
+            </div>
+            <div class="servicio-hover-overlay">
+              <div class="hover-content">
+                <p>Protección inmediata ante accidentes inesperados en cualquier lugar.</p>
+                <a href="#" class="btn-mas-info">MÁS INFORMACIÓN</a>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="servicio-card" data-tipo="empresariales">
+            <img src="imagenes/seguro-agricola.jpg" alt="Seguro Agropecuario" class="servicio-img">
+            <div class="servicio-overlay">
+              <h3>Seguro Agropecuario</h3>
+              <a href="#" class="btn-servicio"><i class="fas fa-chevron-down"></i></a>
+            </div>
+            <div class="servicio-hover-overlay">
+              <div class="hover-content">
+                <p>Protección para cultivos y ganado frente a riesgos naturales.</p>
+                <a href="#" class="btn-mas-info">MÁS INFORMACIÓN</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="ventajas-servicios">
+          <h2>¿Por qué elegir Alas Seguros?</h2>
+          <div class="ventajas-grid">
+            <div class="ventaja-item">
+              <i class="fas fa-user-shield"></i>
+              <h3>Atención Personalizada</h3>
+              <p>Asesores dedicados que entienden tus necesidades específicas</p>
+            </div>
+            <div class="ventaja-item">
+              <i class="fas fa-bolt"></i>
+              <h3>Respuesta Rápida</h3>
+              <p>Procesamiento de reclamos en tiempo récord</p>
+            </div>
+            <div class="ventaja-item">
+              <i class="fas fa-hand-holding-usd"></i>
+              <h3>Precios Competitivos</h3>
+              <p>El mejor valor por tu inversión en protección</p>
+            </div>
+            <div class="ventaja-item">
+              <i class="fas fa-cogs"></i>
+              <h3>Soluciones Flexibles</h3>
+              <p>Planes personalizables según tus necesidades</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta-servicios">
+          <div class="cta-content">
+            <h2>¿Necesitas ayuda para elegir el seguro adecuado?</h2>
+            <p>Nuestros asesores están listos para ayudarte a encontrar la protección perfecta para ti</p>
+            <a href="#" class="btn-contacto">Contáctanos hoy</a>
+          </div>
+        </section>
+      </div>
+    </main>
+    {{>footer}}
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        
+        const categoriaBtns = document.querySelectorAll('.categoria-btn');
+        const servicios = document.querySelectorAll('.servicio-card');
+        
+        categoriaBtns.forEach(btn => {
+          btn.addEventListener('click', function() {
+           
+            categoriaBtns.forEach(b => b.classList.remove('activo'));
+            
+            this.classList.add('activo');
+            
+            const categoriaSeleccionada = this.getAttribute('data-categoria');
+            
+            
+            servicios.forEach(servicio => {
+              if (categoriaSeleccionada === 'todos') {
+                servicio.style.display = 'block';
+              } else if (servicio.getAttribute('data-tipo') === categoriaSeleccionada) {
+                servicio.style.display = 'block';
+              } else {
+                servicio.style.display = 'none';
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

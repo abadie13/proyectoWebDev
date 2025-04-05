@@ -1,0 +1,21 @@
+{
+  "name": "alas_seguros",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "glob": "^11.0.1",
+    "less": "^4.3.0",
+    "vite": "^6.2.5",
+    "vite-plugin-handlebars": "^2.0.0",
+    "vite-plugin-purgecss": "^0.2.13"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8"
+  }
+}

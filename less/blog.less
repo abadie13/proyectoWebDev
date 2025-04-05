@@ -1,0 +1,251 @@
+
+@primary-color: #ff6600;
+@secondary-color: #0e3b6c;
+@text-color: #333;
+@light-gray: #f5f5f5;
+@medium-gray: #e0e0e0;
+@dark-gray: #666;
+@white: #fff;
+@breakpoint: 768px;
+
+
+.hero-blog {
+  background-color: @secondary-color;
+  padding: 50px 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    
+    h1 {
+      color: @white;
+      margin-bottom: 15px;
+      font-size: 2.5rem;
+    }
+    
+    p {
+      color: @white;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+  }
+}
+
+
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.blog-categories {
+  margin-bottom: 40px;
+  text-align: center;
+  
+  h3 {
+    color: @primary-color;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background-color: @primary-color;
+    }
+  }
+  
+  .category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    
+    li {
+      margin: 5px;
+      
+      a {
+        color: @text-color;
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 4px;
+        transition: all 0.3s;
+        border: 1px solid @medium-gray;
+        display: block;
+        
+        &:hover {
+          color: @white;
+          background-color: @primary-color;
+          border-color: @primary-color;
+        }
+        
+        &.active {
+          color: @white;
+          background-color: @primary-color;
+          border-color: @primary-color;
+        }
+      }
+    }
+  }
+}
+
+
+.most-read {
+  margin-bottom: 60px;
+  
+  h2 {
+    color: @primary-color;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: @primary-color;
+    }
+  }
+}
+
+
+.recent-posts {
+  margin-bottom: 60px;
+  
+  h2 {
+    color: @primary-color;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: @primary-color;
+    }
+  }
+}
+
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+.blog-card {
+  background-color: @white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  }
+  
+  .card-image {
+    height: 200px;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+  }
+  
+  &:hover .card-image img {
+    transform: scale(1.05);
+  }
+  
+  .card-content {
+    padding: 20px;
+    flex-grow: 1;
+    
+    .card-date {
+      font-size: 0.9rem;
+      color: @primary-color;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    h3 {
+      font-size: 1.3rem;
+      margin-top: 0;
+      margin-bottom: 15px;
+      
+      a {
+        color: @secondary-color;
+        text-decoration: none;
+        transition: color 0.3s;
+        
+        &:hover {
+          color: @primary-color;
+        }
+      }
+    }
+    
+    p {
+      color: @text-color;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+  }
+  
+  .card-footer {
+    padding: 15px 20px;
+    border-top: 1px solid @medium-gray;
+    
+    .read-more {
+      color: @primary-color;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      
+      i {
+        margin-left: 5px;
+        transition: transform 0.3s;
+      }
+      
+      &:hover i {
+        transform: translateX(5px);
+      }
+    }
+  }
+}
