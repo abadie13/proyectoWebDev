@@ -1,9 +1,8 @@
 
 
-footer {
-    
-    background: @footer-bg;
-    color: @text-color;
+footer { 
+    background-color: white;
+    color: black;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -19,27 +18,34 @@ footer {
     img:hover{
         cursor: pointer;
     }
+    p{
+        color: black;
+    }
 
     .footer-links, .footer-contact {
+        color: black;
         h3 {
+            color: black;
             border-bottom: 2px solid @primary-color;
             display: inline-block;
             padding-bottom: 5px;
         }
 
         ul {
+           
             list-style: none;
             padding: 0;
 
             li {
+                color: black;
                 margin: 5px 0;
             }
 
             a {
-                color: @text-color;
+                color: black;
                 text-decoration: none;
                 transition: color @hover-duration ease-in-out;
-
+                
                 &:hover {
                     color: @primary-color;
                 }
@@ -74,16 +80,19 @@ footer {
 // A partir de 768px, cambiar a diseño de 3 columnas
 @media (min-width: @breakpoint) {
     footer{
+        
         flex-direction: row;
         justify-content: space-between;
         align-items: self-start;
         width: 100%;
         nav ul {
+            color: black;
             margin-top: 20px;
             flex-direction: row;
             gap: 20px;
         }
         .footer-contact{
+            color: black;
             margin-right: 20px;
             margin-top: 20px;
             p{
@@ -97,7 +106,7 @@ footer {
                 margin-top: 15px;
             }
         }
-        .footer-links{
+        .footer-links{ color: black;
             margin-top: 20px;
             margin-bottom: 20px;
             text-align: center;
@@ -105,7 +114,7 @@ footer {
                 margin-top: 5px;
                 li, a{
                     margin-top: 15px;
-                    color: white;
+                    color: black;
                 }
             }
         }
