@@ -7,7 +7,7 @@ h2{
   color: @primary-color;
 }
 .hero-acerca{
- background-color: @footer-bg;
+ background: linear-gradient(rgba(31, 103, 168, 0.9), rgba(31, 103, 168, 0.8));;
   .hero-content{
     background-color: @footer-bg;
   }
@@ -418,7 +418,7 @@ h2{
 /* ===== ESTILOS PARA CTA ===== */
 .cta-section {
   padding: 4rem 0;
-  background: @footer-bg;
+  background: linear-gradient(rgba(31, 103, 168, 0.9), rgba(31, 103, 168, 0.8));
   color: white;
   text-align: center;
 
@@ -441,7 +441,7 @@ h2{
   }
 
   .btn-contacto {
-    background-color: var(--secondary-color);
+    background-color: @primary-color;
     color: white;
     padding: 0.9rem 2.5rem;
     font-size: 1.1rem;
@@ -452,6 +452,7 @@ h2{
 
     &:hover {
       background-color: darken(@secondary-color, 10%);
+      
       transform: translateY(-3px);
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     }
