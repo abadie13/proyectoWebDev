@@ -1,0 +1,52 @@
+.flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-between() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .grid-responsive(@min-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(@min-width, 1fr));
+  }
+  
+  // Efectos visuales
+  .hover-lift() {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: @shadow-lg;
+    }
+  }
+  
+  .link-underline() {
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background: currentColor;
+      transition: width 0.3s ease;
+    }
+    
+    &:hover::after {
+      width: 100%;
+    }
+  }
+  
+  // Responsive
+  .respond-to(@breakpoint, @rules) {
+    @media (min-width: @breakpoint) {
+      @rules();
+    }
+  }
