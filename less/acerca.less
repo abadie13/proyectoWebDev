@@ -10,8 +10,7 @@ h2{
 
 
 .hero-historia {
-  background: linear-gradient(rgba(31, 103, 168, 0.8), rgba(31, 103, 168, 0.7)), 
-              url('../images/oficinas-alas.jpg') center/cover;
+  background-color: @footer-bg;
   color: white;
   padding: 6rem 0;
   text-align: center;
@@ -25,7 +24,7 @@ h2{
 
 .historia {
   padding: 5rem 0;
-  background-color: var(--light-bg);
+  background-color: @footer-bg;
 
   .historia-container {
     max-width: 1200px;
@@ -95,7 +94,6 @@ h2{
 
       &::before {
         content: '✓';
-        color: var(--primary-color);
         font-weight: bold;
       }
     }
@@ -123,7 +121,7 @@ h2{
 
 .valores {
   padding: 6rem 0;
-  background-color: var(--light-text);
+  background-color: @footer-bg;
   
   .valores-container {
     max-width: 1200px;
@@ -415,7 +413,7 @@ h2{
 /* ===== ESTILOS PARA CTA ===== */
 .cta-section {
   padding: 4rem 0;
-  background: linear-gradient(rgba(31, 103, 168, 0.9), rgba(31, 103, 168, 0.8));
+  background: @footer-bg;
   color: white;
   text-align: center;
 
