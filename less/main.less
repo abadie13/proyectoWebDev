@@ -41,7 +41,7 @@ body{
         border: 3px solid @primary-color
     }
     
-    .donaciones{
+   .donaciones{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -62,43 +62,51 @@ body{
                 padding: 0;
                 height: 50px;
                 border-radius: 25px; 
-                overflow: hidden; 
-                z-index: 1; 
-                transition: color 0.7s ease-in-out; 
-                
-                a{
-                    color: black;
-                    text-align: center;
-                    text-decoration: none;
-                    padding: 20px 70px;
-                }
-                
+            }
+        }
 
-                &::before {
-                  content: "";
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  width: 0%; // Empieza con ancho 0
-                  height: 100%;
-                  background-color: #FF6600; // Color naranja
-                  transition: width 0.7s ease-in-out; // Transición para el ancho
-                  z-index: -1; // Colocarlo detrás del texto
+        @media(min-width: 767px){
+            div{
+                .boton{
+                    overflow: hidden; 
+                    z-index: 1; 
+                    transition: color 0.7s ease-in-out; 
+                    width: 40%;
+                    a{
+                        color: black;
+                        text-align: center;
+                        text-decoration: none;
+                        padding: 0px;
+                    }
+        
+                        
+        
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0%; // Empieza con ancho 0
+                        height: 100%;
+                        background-color: #FF6600; // Color naranja
+                        transition: width 0.7s ease-in-out; // Transición para el ancho
+                        z-index: -1; // Colocarlo detrás del texto
+                    }
+                    
+                    &:hover {
+                        a{
+                        color: white;
+                        }
+                        
+                        &::before {
+                        width: 100%; 
+                        }
+                    }
                 }
-                
-                &:hover {
-                  a{
-                    color: white;
-                  }
-                  
-                  &::before {
-                    width: 100%; 
-                  }
-                }
-              }
+            }
         }
     }
-    @media(min-width: @breakpoint){
+    @media(min-width:1025px){
         .donaciones{
             margin-bottom: 6%;
             div{
@@ -117,5 +125,4 @@ body{
             }
         }
     }
-
 }
